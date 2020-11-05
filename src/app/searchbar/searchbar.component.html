@@ -1,0 +1,9 @@
+<form class="container" (submit) = "onFormSubmit($event)">
+    <div class="ui search">
+        <div class="ui icon input">
+          <input (input)="term = $event.target.value" class="prompt" type="text" placeholder="search">
+          <i class="search icon"></i>
+        </div>
+        <div class="results"></div>
+    </div>
+</form>
